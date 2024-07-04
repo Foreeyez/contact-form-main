@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'karla';
+}
+
+body {
+    background: hsl(148, 38%, 91%);
+}
+
+form {
+    margin:0 auto;
+    background-color: hsl(0, 0%, 100%);
+    max-width: fit-content;
+    margin-top: 18vh;
+    border-radius: 3%;
+}
+
+.wrapper {
+    padding: 30px;
+}
+
+.column {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.gs {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.se {
+    margin-left: .3rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+label {
+    margin-bottom: .5rem;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+label::after {
+    content: ' *';
+}
+
+input {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+
+.space {
+    height: 2rem;
+    width: 10.625rem;
+    border-radius: .5rem;
+    border: .5px solid;
+}
+
+.radio {
+    border: solid black .5px ;
+    display: inline-block;
+    height: 2rem;
+    width: 10.625rem;
+    align-content: center;
+    padding-top: .4rem;
+    padding-left: .4rem;
+    border-radius: .5rem;
+}
+
+.long {
+    width: 21.5rem;
+    border-radius: .5rem;
+}
+
+textarea {
+    block-size: 4rem;
+    resize: none ;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+#check {
+    margin-bottom: 1rem;
+    font-size: .6rem;
+    font-weight: 400;
+}
+
+button {
+    display: block;
+    border: 0;
+}
+
+.button {
+    text-align: center;
+    padding: .6rem 0;
+    background-color: hsl(169, 82%, 27%);
+    border-radius: .5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile View */
+@media screen and (min-width:360px) and (max-width:870px)
+{ 
+form {
+    margin:0 auto;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 375px;
+    margin-top: 18vh;
+    border-radius: 3%;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 10rem;
+}
+
+.space {
+    height: 2rem;
+    width: 20.625rem;
+    border-radius: .5rem;
+    border: .5px solid;
+}
+
+.long {
+    width: 20.625rem;
+    border-radius: .5rem;
+}
+
+.radio {
+    border: solid black .5px ;
+    display: inline-block;
+    height: 2rem;
+    width: 20.625rem;
+    align-content: center;
+    padding-top: .4rem;
+    padding-left: .4rem;
+    border-radius: .5rem;
+}
+
+.gs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.se {
+    margin-top: 1rem;
+    margin-left: 0;
+}
+
+.concent{
+    width: 20rem;
+    display: block;
+}
+
+#check {
+    margin-bottom: 0;
+}
+
+}    

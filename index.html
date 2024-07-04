@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+
+  <!-- Contact Us
+
+  First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+  
+
+<form action="post">
+  <div class="wrapper">
+    <h1>Contact Us</h1>
+    <div class="column">
+      <label for="Fname">First Name</label>
+      <input type="text" class="space" required></input>
+    </div>
+    <div class="column">
+      <label for="Lname">Last Name</label>
+      <input type="text" class="space" required></input>
+    </div>
+    <br>
+    <div class="column">
+      <label for="email">Email Address</label>
+      <input type="email" class="space long" required></input>
+     </div>
+    <br>
+    <div class="column">
+     <label for="query">Query Type</label>
+    <div class="gs">
+    <div class="radio">
+     <input type="radio" name="query" required>   General Enquiry</input>
+    </div>
+    <div class="radio se">
+    <input type="radio" name="query" required>   Support Enquiry</input>
+    </div>
+    </div>
+    </div>
+    <br>
+    <div class="column">
+    <label for="message">Message</label>
+    <textarea name="message" id="" class="long" required></textarea>
+    </div>
+    <div class="concent">
+    <input type="checkbox" name="" id="check" required>   I consent to being contacted by the team</input>
+    </div>
+    <button class="long" type="submit">
+    <div class="button">
+    Submit
+    </div>
+  </button>
+  </div>
+</form>
+
+</body>
+</html>
